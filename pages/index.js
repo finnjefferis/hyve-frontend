@@ -21,23 +21,27 @@ console.log(json.data.content)
       <main className="flex flex-col h-screen w-screen justify-center items-center overflow-hidden relative">
         
   
-        <span className="flex flex-wrap justify-center w-rectangle h-4/5 white z-10  -rotate-6  absolute">
+        <span className="flex flex-wrap justify-center w-rectangle h-4/5 white z-10 xl:h-1/2 -rotate-6  absolute">
         <span className="flex  w-1/2 h-4 bg-green-light z-0   -ml-32 absolute right-20 top-4 "/>
         <span className="flex  w-1/2 h-4 bg-green-dark z-0   -ml-32 absolute right-20 top-8   "/>
         <span className="flex flex-wrap justify-center w-rectangle h-5/6 bg-rectangle z-10 mt-12  absolute"/>
-        <span className="flex  w-1/2 h-4 bg-green-dark z-0   -ml-32 absolute left-48 bottom-16"/>  
-        <span className="flex  w-3/5 h-4 bg-green-light z-0   -ml-32 absolute left-48 bottom-12"/>
+        <span className="flex  w-1/2 h-4 bg-green-dark z-0   -ml-32 absolute lg:left-48 lg:bottom-16 xl:bottom-28"/>  
+        <span className="flex  w-3/5 h-4 bg-green-light z-0   -ml-32 absolute lg:left-48 lg:bottom-12 xl:bottom-24"/>
         </span>
-           <Image src={hyve} className="z-20 absolute xl:top-96 lg:top-16 lg:left-80  "/>
+        <div className="">
+        <Image src={hyve} className="z-20 absolute xl:top-96 lg:top-16 lg:left-80 xl:left-1/3  "/>
+        </div>
+           
 
-        <div className="z-20 lg:w-1/2 bg-white absolute lg:right-80 lg:bottom-20  shadow-md p-12">
-          <h1 className="text-3xl z-30 font-semibold p-4 " >
+        <div className="z-20 lg:w-1/2 xl:w-1/3 bg-white absolute lg:right-80 xl:right-1/4 lg:bottom-28 xl:bottom-1/3  shadow-md p-12 xl:p-16">
+          <h1 className="text-3xl xl:text-5xl z-30 font-bold p-4 " >
       {json.data.title}
           </h1>
-          <p className="p-4 w-2/3 leading-loose my-16">{json.data.content}
-           <a href="" className="text-green-dark font-semibold">Read more.</a>
+          <hr class=" h-px m-4 bg-blue border-0 w-16"/>
+          <p className="p-4 w-2/3 leading-loose my-4 xl:text-3xl">{json.data.content}
+           <a href="" className="text-green-light font-semibold xl:text-3xl">Read more.</a>
           </p> 
-          <button className="p-5 px-8 m-3 bg-green-dark text-white font-semibold ">Why choose Hyve?</button>
+          <button className="p-5 px-8 m-3 bg-green-dark text-white font-semibold ">Why choose Hyve? </button>
           <Image src={network} className="-z-10 absolute top-0 right-0 "/>
         </div>
 

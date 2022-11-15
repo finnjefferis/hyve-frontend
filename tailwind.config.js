@@ -10,7 +10,8 @@ module.exports = {
 'green-dark': '#64863f',
 'green-light': '#bfdf96',
 'rectangle' : '#383c40',
-'white': '#ffffff'
+'white': '#ffffff',
+'blue': '#03c1de'
     },
     screens: {
       'sm': '640px',
