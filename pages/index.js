@@ -21,28 +21,34 @@ console.log(json.data.content)
       <main className="flex flex-col h-screen w-screen justify-center items-center overflow-hidden relative">
         
   
-        <span className="flex flex-wrap justify-center w-rectangle h-4/5 white z-10 xl:h-1/2 -rotate-6  absolute">
-        <span className="flex  w-1/2 h-4 bg-green-light z-0   -ml-32 absolute right-20 top-4 "/>
-        <span className="flex  w-1/2 h-4 bg-green-dark z-0   -ml-32 absolute right-20 top-8   "/>
-        <span className="flex flex-wrap justify-center w-rectangle h-5/6 bg-rectangle z-10 mt-12  absolute"/>
-        <span className="flex  w-1/2 h-4 bg-green-dark z-0   -ml-32 absolute lg:left-48 lg:bottom-16 xl:bottom-28"/>  
-        <span className="flex  w-3/5 h-4 bg-green-light z-0   -ml-32 absolute lg:left-48 lg:bottom-12 xl:bottom-24"/>
+        <span className="flex flex-wrap justify-center w-rectangle h-3/5  lg:h-3/5 white z-10 xl:h-2/5 -rotate-6  absolute mt-56 md:mt-0">
+        <span className="flex  w-1/2 h-4 xl:h-8 bg-green-light z-0  right-0 -top-8  lg:-ml-32 absolute lg:right-20 lg:top-4 xl:-top-4 "/>
+        <span className="flex  w-1/2 h-4 xl:h-8 bg-green-dark z-0 right-0 -top-4  lg:-ml-32 absolute lg:right-20 lg:top-8  xl:top-4 "/>
+
+        <span className="flex  w-1/2 h-4 xl:h-8 bg-green-light z-0 left-0  bottom-60 lg:-ml-32 absolute lg:left-48 lg:bottom-8 xl:bottom-16"/>  
+        <span className="flex  w-3/5 h-4 xl:h-8 bg-green-dark z-0 -ml-4  lg-ml-32 absolute left-10 bottom-64 lg:left-40 lg:bottom-4 xl:bottom-8"/>
+        <span className="flex flex-wrap justify-center w-rectangle h-1/2 lg:h-5/6 bg-rectangle z-0 md:mt-12 "/>
+    
         </span>
         <div className="">
-        <Image src={hyve} className="z-20 absolute xl:top-96 lg:top-16 lg:left-80 xl:left-1/3  "/>
+        <Image src={hyve}  alt="Hyve Managed Hosting"
+  width={750}
+  height={600}
+
+  quality={65} className="z-20 absolute top-16 -left-10  xl:top-1/4 lg:top-28 lg:left-64 xl:left-1/3  "/>
         </div>
            
 
-        <div className="z-20 lg:w-1/2 xl:w-1/3 bg-white absolute lg:right-80 xl:right-1/4 lg:bottom-28 xl:bottom-1/3  shadow-md p-12 xl:p-16">
-          <h1 className="text-3xl xl:text-5xl z-30 font-bold p-4 " >
+        <div className="z-20 w-4/5 lg:w-1/2 xl:w-1/3 bg-white absolute right-5 bottom-12 md:bottom-20 lg:right-80 xl:right-1/4 lg:bottom-28 xl:bottom-1/4  shadow-md lg:p-12 xl:p-16 xl:h-1/3 rounded">
+          <h1 className=" text-xl md:text-3xl xl:text-5xl z-30 font-bold p-4 " >
       {json.data.title}
           </h1>
-          <hr class=" h-px m-4 bg-blue border-0 w-16"/>
-          <p className="p-4 w-2/3 leading-loose my-4 xl:text-3xl">{json.data.content}
+          <hr className=" h-px m-4 bg-blue border-0 w-16"/>
+          <p className="text-sm md:text:lg p-4 md:w-2/3 leading-loose my-4 xl:my-12 xl:text-3xl">{json.data.content}
            <a href="" className="text-green-light font-semibold xl:text-3xl">Read more.</a>
           </p> 
-          <button className="p-5 px-8 m-3 bg-green-dark text-white font-semibold ">Why choose Hyve? </button>
-          <Image src={network} className="-z-10 absolute top-0 right-0 "/>
+          <button className="p-3 px-10 m-3 bg-green-dark text-white font-semibold  xl:text-2xl ">Why choose Hyve? </button>
+          <Image src={network} width={240} height={360}  alt="Network image" className="-z-10 absolute top-0 right-0 w-auto "/>
         </div>
 
        
